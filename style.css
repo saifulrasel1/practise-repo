@@ -5,23 +5,34 @@ body{
 .first-one{
     display:flex;
 }
-.first-one1{
-    width:50%;
-    margin-left:10%;
+.first-one1 {
+    width: 50%;
+    margin-left: 10%;
+    text-align: left;
 }
-.first-one1 img{
-    width:78%;
-    margin-right:5%;
+
+.first-one .first-one1 a {
+    padding: 0.5rem 2rem;
 }
-h1{
-    color:darkgray;
+
+.first-one1 img {
+    width: 100%;
+}
+.first-one .first-one1 h1 {
+    color: darkgray;
+    font-size: 48px;
+    line-height: 1.2;
 }
 span{
     color:orange;
 }
-.first-one1 p{
-    margin-bottom:30px;
+.first-one1 p {
+    margin-bottom: 3rem;
+    color: #aeaeae;
+    font-size: 14px;
+    font-weight: 100;
 }
+
 a{
     text-decoration: none;
     border:1px solid orange;
@@ -32,19 +43,20 @@ a{
     
 }
 .first-one{
-    background-image: url(shapes/Frame\ 56.jpg);
+    /* background-image: url(shapes/Frame\ 56.jpg); */
 }
-.snd-one{
-    display:flex;
-    margin-top:110px;
+.snd-one {
+    display: flex;
     background-image: url(shapes/Frame\ 57.jpg);
     background-repeat: no-repeat;
-    margin-bottom:100px;
+    padding-top: 3rem;
 }
-.snd-one1{
-    width:40%;
-    margin-left:10%;
-    
+.snd-one1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .snd-one1 img{
     width:60%;
@@ -54,29 +66,44 @@ section{
     text-align:center;
     margin-bottom:40px;
 }
-.last{
-    display:flex;
-
+.last {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 1rem;
+    margin: 6rem;
 }
-.last-last{
-    width:50%;
+.last-last {
+    box-shadow: 3px 3px 10px #00000033;
+    padding: 2rem;
+    min-height: 350px;
+    border-radius: 10px;
 }
-.last-last img{
-    width:40%;
-    margin-left:5%;
-    margin-right:5%;
+.last-last img {
+    width: 90%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 16px;
 }
-
-.before-footer{
-    display:flex;
+.before-footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 3rem;
+    padding: 1rem 12rem;
 }
 .who{
     text-align: center;
 }
-footer{
-    width:100%;;
-    background-color:black;
-   color:white;
-   text-align:center;
-   font-size:14px;
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 1rem;
 }
+footer h2 {
+    text-transform: uppercase;
+}
+
+
